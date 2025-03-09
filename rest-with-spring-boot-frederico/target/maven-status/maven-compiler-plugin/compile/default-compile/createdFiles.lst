@@ -1,1 +1,8 @@
+br\com\frederico\exception\UnsupportedMathOperationException.class
+br\com\frederico\PersonServices.class
+br\com\frederico\model\Person.class
+br\com\frederico\exception\handler\CustomizedEntityResponseHandler.class
+br\com\frederico\request\converters\NumberConverter.class
+br\com\frederico\controllers\PersonController.class
+br\com\frederico\exception\ExceptionResponse.class
 br\com\frederico\Startup.class

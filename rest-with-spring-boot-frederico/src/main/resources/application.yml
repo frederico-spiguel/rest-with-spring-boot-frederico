@@ -1,1 +1,15 @@
-spring.application.name=rest-with-spring-boot-frederico
+spring:
+  application:
+    name: rest-with-spring-boot-frederico
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/rest_with_spring_boot_frederico?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+    show-sql: false
+    open-in-view: false
