@@ -1,48 +1,54 @@
 package br.com.frederico.services;
 
+import br.com.frederico.data.dto.PersonDTO;
 import br.com.frederico.exception.ResourceNotFoundException;
+import static br.com.frederico.mapper.ObjectMapper.parseListObjects;
+import static br.com.frederico.mapper.ObjectMapper.parseObject;
 import br.com.frederico.model.Person;
 import br.com.frederico.repository.PersonRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
-import java.util.logging.Logger;
 
 @Service
 public class PersonServices {
 
 
     private final AtomicLong counter = new AtomicLong();
-    private Logger logger = Logger.getLogger(PersonServices.class.getName());
+    private Logger logger = LoggerFactory.getLogger(PersonServices.class.getName());
 
 
     @Autowired
     PersonRepository repository;
 
 
-    public List<Person> findAll(){
+    public List<PersonDTO> findAll(){
         logger.info("Finding all People!");
 
-        return repository.findAll();
+        return parseListObjects(repository.findAll(), PersonDTO.class);
     }
 
-    public Person findById(Long id){
+    public PersonDTO findById(Long id){
         logger.info("Finding One Person!");
 
-        return repository.findById(id)
+        var entity = repository.findById(id)
                 .orElseThrow( () -> new ResourceNotFoundException("No records found for this ID!"));
+        return parseObject(entity, PersonDTO.class);
     }
 
-    public Person create(Person person){
+    public PersonDTO create(PersonDTO person){
 
         logger.info("Creating one Person!");
+        var entity = parseObject(person, Person.class);
 
-        return repository.save(person);
+        return parseObject(repository.save(entity), PersonDTO.class);
     }
 
-    public Person update(Person person){
+    public PersonDTO update(PersonDTO person){
 
         logger.info("Updating one Person!");
 
@@ -51,10 +57,10 @@ public class PersonServices {
 
         entity.setFirstName(person.getFirstName());
         entity.setLastName(person.getLastName());
-        entity.setAdress(person.getAdress());
+        entity.setAddress(person.getAddress());
         entity.setGender(person.getGender());
 
-        return repository.save(person);
+        return parseObject(repository.save(entity), PersonDTO.class);
     }
 
     public void delete(Long id){
