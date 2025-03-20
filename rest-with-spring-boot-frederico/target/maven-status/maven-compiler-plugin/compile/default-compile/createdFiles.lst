@@ -1,8 +1,11 @@
-br\com\frederico\exception\UnsupportedMathOperationException.class
-br\com\frederico\PersonServices.class
-br\com\frederico\model\Person.class
 br\com\frederico\exception\handler\CustomizedEntityResponseHandler.class
-br\com\frederico\request\converters\NumberConverter.class
+br\com\frederico\services\PersonServices.class
+br\com\frederico\data\dto\PersonDTO.class
+br\com\frederico\mapper\ObjectMapper.class
+br\com\frederico\controllers\TestLogController.class
+br\com\frederico\exception\ResourceNotFoundException.class
+br\com\frederico\model\Person.class
 br\com\frederico\controllers\PersonController.class
 br\com\frederico\exception\ExceptionResponse.class
+br\com\frederico\repository\PersonRepository.class
 br\com\frederico\Startup.class

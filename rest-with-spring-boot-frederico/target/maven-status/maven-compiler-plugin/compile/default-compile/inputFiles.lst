@@ -1,8 +1,11 @@
 C:\Users\frede\Documents\SPRINGBOOT2025\rest-with-spring-boot-frederico\rest-with-spring-boot-frederico\src\main\java\br\com\frederico\controllers\PersonController.java
+C:\Users\frede\Documents\SPRINGBOOT2025\rest-with-spring-boot-frederico\rest-with-spring-boot-frederico\src\main\java\br\com\frederico\controllers\TestLogController.java
+C:\Users\frede\Documents\SPRINGBOOT2025\rest-with-spring-boot-frederico\rest-with-spring-boot-frederico\src\main\java\br\com\frederico\data\dto\PersonDTO.java
 C:\Users\frede\Documents\SPRINGBOOT2025\rest-with-spring-boot-frederico\rest-with-spring-boot-frederico\src\main\java\br\com\frederico\exception\ExceptionResponse.java
 C:\Users\frede\Documents\SPRINGBOOT2025\rest-with-spring-boot-frederico\rest-with-spring-boot-frederico\src\main\java\br\com\frederico\exception\handler\CustomizedEntityResponseHandler.java
-C:\Users\frede\Documents\SPRINGBOOT2025\rest-with-spring-boot-frederico\rest-with-spring-boot-frederico\src\main\java\br\com\frederico\exception\UnsupportedMathOperationException.java
+C:\Users\frede\Documents\SPRINGBOOT2025\rest-with-spring-boot-frederico\rest-with-spring-boot-frederico\src\main\java\br\com\frederico\exception\ResourceNotFoundException.java
+C:\Users\frede\Documents\SPRINGBOOT2025\rest-with-spring-boot-frederico\rest-with-spring-boot-frederico\src\main\java\br\com\frederico\mapper\ObjectMapper.java
 C:\Users\frede\Documents\SPRINGBOOT2025\rest-with-spring-boot-frederico\rest-with-spring-boot-frederico\src\main\java\br\com\frederico\model\Person.java
-C:\Users\frede\Documents\SPRINGBOOT2025\rest-with-spring-boot-frederico\rest-with-spring-boot-frederico\src\main\java\br\com\frederico\PersonServices.java
-C:\Users\frede\Documents\SPRINGBOOT2025\rest-with-spring-boot-frederico\rest-with-spring-boot-frederico\src\main\java\br\com\frederico\request\converters\NumberConverter.java
+C:\Users\frede\Documents\SPRINGBOOT2025\rest-with-spring-boot-frederico\rest-with-spring-boot-frederico\src\main\java\br\com\frederico\repository\PersonRepository.java
+C:\Users\frede\Documents\SPRINGBOOT2025\rest-with-spring-boot-frederico\rest-with-spring-boot-frederico\src\main\java\br\com\frederico\services\PersonServices.java
 C:\Users\frede\Documents\SPRINGBOOT2025\rest-with-spring-boot-frederico\rest-with-spring-boot-frederico\src\main\java\br\com\frederico\Startup.java

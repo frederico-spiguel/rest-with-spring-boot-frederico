@@ -1,1 +1,3 @@
 br\com\frederico\StartupTests.class
+br\com\frederico\unitetest\mapper\ObjectMapperTests.class
+br\com\frederico\unitetest\mapper\mocks\MockPerson.class
